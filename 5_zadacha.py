@@ -17,7 +17,22 @@ spisok_2 = ('Ferrari', 17, 4456, 2021, 'Paris', 'UK', 777, 23)
 x=[]
 for i in spisok_1 :
 	for j in spisok_2:
-		if i==j:
+		if i!=j:
 			x.append(i)
-			break
+			break# Задание 6:
+# Дан список чисел:
+# numbers = [1,0,-2,4,3,6,6,3,5,8,4,2] 
+# Выведите все элементы списка, которые больше предущего элемента
+# Пример: (numbers: 1,5,2,4,3 Результат: 5,4)numbers = [1,0,-2,4,3,6,6,3,5,8,4,2] 
+numbers = [1,0,-2,4,3,6,6,3,5,8,4,2] 
+x=[]
+for i in range(len(numbers)-1):
+	n=numbers[i]
+	i+=1
+	m=numbers[i]
+	if m>n:
+		x.append(m)
 print(x)
+
+print(x)
+
