@@ -66,7 +66,12 @@ for i in digits:
     print(i/9)	
 
 
-
+a=333
+b=555
+c=a
+a=b
+b=c
+print(a,b)
 
 
 
